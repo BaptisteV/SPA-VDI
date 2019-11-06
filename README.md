@@ -1,3 +1,16 @@
+### Commercial webapp for a potential real estate diagnosis company
+
+The main goals are:
+- Provide a good looking prototype
+- Practice React
+- Practice responsive design, using Bootstrap
+- Practice CSS / design
+
+Next: 
+- KISS / DRY balance 
+- Deploy it
+- Page load as fast as possible
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

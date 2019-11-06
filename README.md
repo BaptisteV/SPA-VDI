@@ -11,6 +11,12 @@ Next:
 - Deploy it
 - Page load as fast as possible
 
+Core dependencies:
+- react
+- react-router-dom
+- bootstrap
+- pigeon-maps
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

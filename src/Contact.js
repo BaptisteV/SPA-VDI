@@ -2,7 +2,7 @@ import React from "react";
 
 import Map from "pigeon-maps";
 import Marker from "pigeon-marker";
-import EmptySpacer from "./utils/EmptySpacer";
+import EmptySpacer from "./parts/EmptySpacer";
 import contactImage from "./images/contact2.png";
 import facebookIcon from "./images/facebook-icon.png";
 import externalLinkIcon from "./images/external-link-icon-small.png";
@@ -11,12 +11,13 @@ import "./css/presentation.css";
 const position = [47.33405, 5.08245];
 
 const map = (
-	<Map center={position} zoom={13} width={600} height={400}>
+	<Map className="rounded" center={position} zoom={13} width={600} height={400}>
 		<Marker anchor={position} payload={1} onClick={({ event, anchor, payload }) => {}} />
 	</Map>
 );
 
 class Contact extends React.Component {
+	
 	render() {
 		return (
 			<div className="container quick-fadein">
@@ -37,7 +38,7 @@ class Contact extends React.Component {
 				</div>
 				<div className="row">
 					<b>Facebook&nbsp;:&nbsp;</b>
-					<a href="http://www.facebook.com" target="_blank">
+					<a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
 						<img src={facebookIcon} alt="Facebook" />
 						<span className="external-link-icon">
 							<img alt="External link icon" src={externalLinkIcon} />

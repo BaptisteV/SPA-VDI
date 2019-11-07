@@ -1,5 +1,6 @@
 import React from "react";
 import EmptySpacer from "./parts/EmptySpacer";
+import PageTopImage from "./parts/PageTopImage";
 import portraitImage from "./images/portrait-moto.jpg";
 import externalLinkIcon from "./images/external-link-icon-small.png";
 import "./css/presentation.css";
@@ -32,12 +33,7 @@ class Presentation extends React.Component {
 	render() {
 		return (
 			<div className="container quick-fadein">
-				<div id="portrait-wrapper" className="text-center">
-					<EmptySpacer />
-					<img src={portraitImage} className="top-image rounded-circle" id="portait" alt="Portrait" />
-					<EmptySpacer />
-				</div>
-
+				<PageTopImage src={portraitImage} alt="Portrait" />
 				<div className="row">
 					<div className="col-md-12">
 						<h3>Presentation</h3>

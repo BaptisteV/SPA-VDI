@@ -1,5 +1,5 @@
 import React from "react";
-import EmptySpacer from "./EmptySpacer"
+import EmptySpacer from "./EmptySpacer";
 
 class PageTopImage extends React.Component {
 	render() {

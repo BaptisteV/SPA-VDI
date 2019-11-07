@@ -3,6 +3,7 @@ import React from "react";
 import Map from "pigeon-maps";
 import Marker from "pigeon-marker";
 import EmptySpacer from "./parts/EmptySpacer";
+import PageTopImage from "./parts/PageTopImage";
 import contactImage from "./images/contact2.png";
 import facebookIcon from "./images/facebook-icon.png";
 import externalLinkIcon from "./images/external-link-icon-small.png";
@@ -17,15 +18,10 @@ const map = (
 );
 
 class Contact extends React.Component {
-	
 	render() {
 		return (
 			<div className="container quick-fadein">
-				<div className="text-center">
-					<EmptySpacer />
-					<img src={contactImage} className="top-image rounded-circle" alt="Contact" />
-					<EmptySpacer />
-				</div>
+				<PageTopImage src={contactImage} alt="Contact" />
 				<h3>Contact</h3>
 				<hr />
 				<div className="row">

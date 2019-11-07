@@ -1,5 +1,4 @@
 import React from "react";
-import EmptySpacer from "./parts/EmptySpacer";
 import PageTopImage from "./parts/PageTopImage";
 import certificateIcon from "./images/certificate2.png";
 

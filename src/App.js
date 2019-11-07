@@ -8,9 +8,7 @@ import Contact from "./Contact";
 
 class App extends React.Component {
 	render() {
-		console.log("location", window.location.href.endsWith("/"))
 		return (
-			
 			<div id="App-container" className="container">
 				<Header></Header>
 				<Switch>

@@ -8,7 +8,7 @@ import "./css/presentation.css";
 class Presentation extends React.Component {
 	constructor() {
 		super();
-		this.state = {
+		this.content = {
 			presentation: [
 				`Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent arcu nunc, molestie sit amet velit sit amet, tempus tincidunt leo. Morbi sit amet ullamcorper felis. Pellentesque sollicitudin lorem vel semper ultrices. Donec id erat eu nibh mattis aliquet. Morbi ut auctor eros.`,
 				`Nullam varius justo eget odio tempor placerat. Vivamus nulla velit, congue ut nibh et, luctus ullamcorper augue. Vestibulum finibus, diam ac venenatis blandit, nibh metus consectetur felis, ut mollis lorem ex suscipit augue. Praesent fringilla eu orci vitae hendrerit. Maecenas finibus in erat sed gravida. Vivamus molestie lorem dui, tincidunt molestie turpis condimentum aliquet. Praesent sollicitudin non lectus ut euismod. Proin feugiat neque eu enim molestie venenatis. Fusce varius laoreet quam, a maximus eros`,
@@ -38,7 +38,7 @@ class Presentation extends React.Component {
 					<div className="col-md-12">
 						<h3>Presentation</h3>
 						<hr />
-						{this.state.presentation.map((paragraph, i) => {
+						{this.content.presentation.map((paragraph, i) => {
 							return <p key={i}>{paragraph}</p>;
 						})}
 					</div>
@@ -49,7 +49,7 @@ class Presentation extends React.Component {
 				<div className="row">
 					<div className="col-md-4"></div>
 					<ul className="list-group">
-						{this.state.disagnostics.map((diag, i) => {
+						{this.content.disagnostics.map((diag, i) => {
 							return <li className="list-group-item">{diag}</li>;
 						})}
 					</ul>
@@ -60,7 +60,7 @@ class Presentation extends React.Component {
 				<div className="row">
 					<div className="col-md-4"></div>
 					<ul className="list-group">
-						{this.state.links.map((linksItem, i) => {
+						{this.content.links.map((linksItem, i) => {
 							return (
 								<li className="list-group-item">
 									<a href={linksItem.link} target="_blank" rel="noopener noreferrer">

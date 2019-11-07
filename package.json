@@ -5,7 +5,6 @@
   "dependencies": {
     "bootstrap": "^4.3.1",
     "jquery": "^3.4.1",
-    "leaflet": "^1.5.1",
     "pigeon-maps": "^0.14.0",
     "pigeon-marker": "^0.3.4",
     "pigeon-overlay": "^0.2.3",

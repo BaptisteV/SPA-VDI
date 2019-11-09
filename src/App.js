@@ -5,17 +5,19 @@ import Header from "./Header";
 import Specialite from "./Specialites";
 import Presentation from "./Presentation";
 import Contact from "./Contact";
+import Footer from "./Footer"
 
 class App extends React.Component {
 	render() {
 		return (
-			<div id="App-container" className="container">
-				<Header></Header>
+			<div id="app-container" className="container">
+				<Header />
 				<Switch>
 					<Route exact path="/" component={Presentation} />
 					<Route exact path="/specialite" component={Specialite} />
 					<Route exact path="/contact" component={Contact} />
 				</Switch>
+				<Footer />
 			</div>
 		);
 	}

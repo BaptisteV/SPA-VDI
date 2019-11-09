@@ -7,7 +7,7 @@ class Header extends React.Component {
 	constructor() {
 		super();
 		this.state = {
-			selected: 0
+			selected: 0,
 		};
 		this.presentationClicked = this.presentationClicked.bind(this);
 		this.specialitesClicked = this.specialitesClicked.bind(this);
@@ -15,15 +15,15 @@ class Header extends React.Component {
 	}
 
 	presentationClicked() {
-		this.setState({selected: 0});
+		this.setState({ selected: 0 });
 	}
 
 	specialitesClicked() {
-		this.setState({selected: 1});
+		this.setState({ selected: 1 });
 	}
 
 	contactClicked() {
-		this.setState({selected: 2});
+		this.setState({ selected: 2 });
 	}
 
 	render() {
@@ -40,15 +40,15 @@ class Header extends React.Component {
 				<div className="row">
 					<nav className="navbar navbar-light col-md-12 rounded">
 						<NavLink className="navbar-text" onClick={this.presentationClicked} to="/">
-							<BoldText text="Presentation" bold={this.state.selected === 0}/>
+							<BoldText text="Presentation" bold={this.state.selected === 0} />
 							<UnderLiner visible={this.state.selected === 0}></UnderLiner>
 						</NavLink>
 						<NavLink className="navbar-text" onClick={this.specialitesClicked} to="/specialite">
-							<BoldText text="Specialites" bold={this.state.selected === 1}/>
+							<BoldText text="Specialites" bold={this.state.selected === 1} />
 							<UnderLiner visible={this.state.selected === 1}></UnderLiner>
 						</NavLink>
 						<NavLink className="navbar-text" onClick={this.contactClicked} to="/contact">
-							<BoldText text="Contact" bold={this.state.selected === 2}/>
+							<BoldText text="Contact" bold={this.state.selected === 2} />
 							<UnderLiner visible={this.state.selected === 2}></UnderLiner>
 						</NavLink>
 					</nav>
@@ -59,14 +59,14 @@ class Header extends React.Component {
 }
 
 class UnderLiner extends React.Component {
-	render(){
-		return (this.props.visible ? <hr className="underliner quick-fadein"/> : <hr style={{visibility: "hidden"}} />)
+	render() {
+		return this.props.visible ? <hr className="underliner quick-fadein" /> : <hr style={{ visibility: "hidden" }} />;
 	}
 }
 
 class BoldText extends React.Component {
-	render(){
-		return (this.props.bold ? <p style={{fontWeight: "bold"}}>{this.props.text}</p> : <p>{this.props.text}</p>);
+	render() {
+		return this.props.bold ? <p style={{ fontWeight: "bold" }}>{this.props.text}</p> : <p>{this.props.text}</p>;
 	}
 }
 

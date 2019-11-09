@@ -1,9 +1,8 @@
 import React from "react";
 import devIcon from "./images/github.svg";
-import "./css/footer.css";
 import EmptySpacer from "./parts/EmptySpacer";
 
-class Footer extends React.Component {
+class Credits extends React.Component {
 	render() {
 		return (
 			<div className="container">
@@ -19,4 +18,4 @@ class Footer extends React.Component {
 	}
 }
 
-export default Footer;
+export default Credits;

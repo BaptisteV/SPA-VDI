@@ -7,7 +7,8 @@ import PageTopImage from "./parts/PageTopImage";
 import contactImage from "./images/contact2.png";
 import facebookIcon from "./images/facebook-icon.png";
 import externalLinkIcon from "./images/external-link-icon-small.png";
-import "./css/presentation.css";
+import Credits from "./Credits";
+import "./css/contact.css";
 
 const position = [47.33405, 5.08245];
 
@@ -53,6 +54,7 @@ class Contact extends React.Component {
 				<EmptySpacer />
 				<div className="text-center">{map}</div>
 				<EmptySpacer />
+				<Credits />
 			</div>
 		);
 	}

@@ -5,7 +5,6 @@ import Header from "./Header";
 import Specialite from "./Specialites";
 import Presentation from "./Presentation";
 import Contact from "./Contact";
-import Footer from "./Footer"
 
 class App extends React.Component {
 	render() {
@@ -17,7 +16,6 @@ class App extends React.Component {
 					<Route exact path="/specialite" component={Specialite} />
 					<Route exact path="/contact" component={Contact} />
 				</Switch>
-				<Footer />
 			</div>
 		);
 	}
